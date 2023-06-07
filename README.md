@@ -37,9 +37,25 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+### Config stand alone for build image
+Config for stand alone:
+```
+const nextConfig = {
+  reactStrictMode: true,
+  output: 'standalone',
+}
+```
+
+
 ## Use Docker for running
 
 Running with docker
 ```
 docker-compose up
+```
+
+### Build image again with compose
+Build image when you wake up, but have to wake up again if.
+```
+docker-compose up --build
 ```
